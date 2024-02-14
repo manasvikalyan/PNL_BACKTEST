@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-
 import os
 
 def clean_df1(df1):
@@ -9,7 +8,7 @@ def clean_df1(df1):
 
 def main():
     st.title("Data Cleaning App")
-    st.set_page_config(page_title='BackTest PnL', layout='wide')
+    
     file = st.file_uploader("Upload your Excel or CSV file", type=['xlsx', 'csv'])
     if file is not None:
         if '.csv' in file.name:
